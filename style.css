@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display&display=swap");
+
+html {
+  background: #fcf5f2;
+}
+
+img {
+  margin-left: auto;
+  margin-left: auto;
+  width: 550px;
+}
+
+::-moz-selection {
+  background: #c6cbcc;
+  color: black;
+}
+
+::selection {
+  background: #c6cbcc;
+  color: black;
+}
+
+@media (max-width: 375px) {
+  #title {
+    font-size: 10vw;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  #survey-form {
+    background-color: #fffdf5;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 8vw;
+    text-align: left;
+  }
+
+  .line {
+    max-width: 300px;
+    font-size: 2vw;
+  }
+
+  textarea {
+    max-width: 300px;
+  }
+}
+
+h1 {
+  font-family: "Muli", sans-serif;
+  font-size: 54px;
+}
+
+main {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+#description-box {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#description {
+  font-size: 18px;
+}
+
+.survey-label {
+  font-size: 18px;
+  font-weight: 800;
+  /* padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  border-width: 0px;
+  border-style: none;
+  border-color: initial;
+  border-image: initial; */
+}
+fieldset {
+  display: inherit;
+  margin: inherit;
+  padding: 0px;
+  border: none;
+}
+
+legend {
+  display: inherit;
+  padding: 0px;
+  border: none;
+}
+
+/* ADDED CLASS #name-label {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+#number-label {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+#email-label {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+#dropdown-label {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+legend {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+#comments-label {
+  font-size: 18px;
+  margin-top: 12px;
+} */
+
+#survey-form {
+  background-color: #fffdf5;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 10px 10px;
+  font-size: 22px;
+  text-align: left;
+}
+
+input:focus {
+  outline-style: solid;
+  outline-color: #c6cbcc;
+}
+
+select:focus {
+  outline-style: solid;
+  outline-color: #c6cbcc;
+}
+
+textarea:focus {
+  outline-style: solid;
+  outline-color: #c6cbcc;
+}
+
+/*CUSTOM RADIO BUTTONS*/
+
+.radiolabels {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radiolabels input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c6cbcc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiolabels:hover input ~ .checkmark-radio {
+  background-color: #78787a;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiolabels input:checked ~ .checkmark-radio {
+  background-color: #78787a;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiolabels input:checked ~ .checkmark-radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiolabels .checkmark-radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c6cbcc;
+}
+
+/*END CUSTOM RADIO BUTTONS*/
+
+/*BEGIN CUSTOM CHECKED BUTTONS*/
+
+/* Customize the label (the container) */
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c6cbcc;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark-2 {
+  background-color: #78787a;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark-2 {
+  background-color: #78787a;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark-2:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark-2:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #c6cbcc;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* END PERSONALIZED CHECKBOXES */
+
+.line {
+  width: 450px;
+  height: 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+
+#submit-box {
+  /* margin-right: auto;
+  margin-left: auto; */
+  text-align: center;
+}
+
+#submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 110px;
+  height: 30px;
+  background-color: #c6cbcc;
+  font-family: "Muli", serif;
+  font-size: 18px;
+  cursor: pointer;
+  outline-style: solid;
+  outline: none;
+}
+
+#submit:hover {
+  border-color: #78787a;
+  border-width: 2px;
+}
